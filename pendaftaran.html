@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Sederhana</title>
+</head>
+<body>
+    <h1>Form Pendaftaran Sederhana</h1>
+    <form action="#" method="post">
+        <!-- Nama lengkap -->
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required placeholder="masukan nama lengkap" required minlength="3">
+        <br><br>
+
+        <!-- Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="masukkan email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="masukkan password" required minlength="8">
+        <br><br>
+
+        <!-- Tanggal lahir -->
+        <label for="tanggal-lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+        <br><br>
+
+        <!-- Isian umur -->
+        <label for="umur">Umur:</label>
+        <input type="number" id="umur" name="umur" min="18" max="30" />
+        <br></br>
+
+        <!-- Jenis kelamin -->
+        <label for="jenis-kelamin">Jenis Kelamin:</label>
+        <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki" required>
+        <label for="laki-laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>
+        <label for="perempuan">Perempuan</label>
+        <br><br>
+
+        <!-- Nomor phone -->
+        <label for="nomor-telepon">Nomor Telepon:</label>
+        <input type="tel" id="nomor-telepon" name="nomor-telepon" required placeholder="masukkan telpon" pattern="[0-9]{10,13}">
+        <br><br>
+
+        <!-- Uanggah foto profil -->
+        <label for="foto-profil">Unggah Foto Profil:</label>
+        <input type="file" id="foto-profil" name="foto-profil">
+        <br><br>
+
+        <input type="checkbox" id="syarat-ketentuan" name="syarat-ketentuan" required>
+        <label for="syarat-ketentuan"> Saya Setuju dengan Syarat dan Ketentuan</label>
+        <br><br>
+
+        <!-- Tombol submit -->
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>
